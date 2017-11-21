@@ -1,0 +1,90 @@
+
+        /*Menu  de Habilidades Tecnicas 
+                  Copiar y Pegar */
+
+
+
+.habilidades-menu ul{
+list-style: none;
+margin-top: 0;
+}
+
+.habilidades-menu ul li{
+	padding: 15px;
+	position: relative;
+	width: 200px;
+	background-color: #FFB800;
+	border-right: 5px solid #ECC905;
+	border-top: 1px solid #E7E7E7;
+}
+
+.habilidades-menu > ul > li{
+	border-right: 5px solid #fff;
+}
+
+.habilidades-menu ul ul{
+	transition: all 0.3s;
+	opacity: 0;
+	position:absolute;
+	visibility: hidden;
+	left: 80%
+	top:5%;
+}
+
+.habilidades-menu ul li:hover > ul{
+       opacity: 1;
+       visibility: visible;
+
+}
+
+.habilidades-menu ul li a{
+	color:#ffffff;
+	text-decoration-color: none;
+}
+
+
+        /*Menu 2 de Habilidades Socioemocionales
+                  Copiar y Pegar */
+
+
+.habilidades-menu-2 ul{
+list-style: none;
+margin-top: 0;
+}
+
+.habilidades-menu-2 ul li{
+	padding: 15px;
+	position: relative;
+	width: 200px;
+	background-color: #FFB800;
+	border-right: 5px solid #ECC905;
+	border-top: 1px solid #E7E7E7;
+}
+
+.habilidades-menu-2 > ul > li{
+	border-right: 5px solid #fff;
+}
+
+.habilidades-menu-2 ul ul{
+	transition: all 0.3s;
+	opacity: 0;
+	position:absolute;
+	visibility: hidden;
+	left: 80%
+	top:5%;
+}
+
+.habilidades-menu-2 ul li:hover > ul{
+       opacity: 1;
+       visibility: visible;
+
+}
+
+.habilidades-menu-2 ul li a{
+	color:#ffffff;
+	text-decoration-color: none;
+}
+
+
+
+

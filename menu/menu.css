@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+    /*Menu 1*/
+
+#imagen-1{
+	display: inline-block;
+	margin-top: 500
+}
+
+.menu li{
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	margin-left: 60px;
+	margin-top: 300px;
+	padding: 8px;
+
+}
+
+.menu {
+	margin-top: -478px;
+	margin-left: 160px;
+}
+
+ .suga-img-li .suga-img{
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+}
+
+
+    /*Logotipo Lab*/
+#logotipo img{
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 300px;
+}
+
+   /*Menu Desplegable*/
+
+.nav-tabs{
+	background-color: #FFB800;
+	margin-left:203px;
+}
+.nav-tabs > li > a{
+	color: #000!important;
+}
+
+  /*Logotipo*/
+
+
+
+
+#porcentaje li{
+	display: inline-block;
+	font-size: 19px;
+	margin-left:161px;
+}
+
+
+
+.students-graphic img{
+	height: 312px;
+
+}
+
+        /*Contenedor 2*/
+
+
+
+
+
+#circulo-logros{
+	display: inline-block;
+
+}
+
+.contenedor-2{
+	display: inline-block; /*lo agrego la Pau*/
+  border: 1px solid black;
+  height: auto;
+  width: 400px;
+  vertical-align: top;
+  margin-top: 50px;
+  margin-left: 10px;
+
+}
+
+.contenedor-1{
+	display: inline-block;  /*lo agrego la Pau*/
+  border: 1px solid black;
+  vertical-align: top;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+#contenedor-3{
+  display: inline-block;  /*lo agrego la Pau*/
+  border: 1px solid black;
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+#tech-skills, #life-skills, #profesores, #jedi, #contenedor-de-felicidad-yey{
+  border: 1px solid black;
+}
+
+#tech-skills, #life-skills{
+  margin-left: 80px;
+  width: 1200px;
+  margin-top: 50px;
+}
+
+.promoter-score{
+  width: 200px;
+}
+
+
+.promoter-score-list{
+  margin-top: 20px;
+}
+
+
+              /*Profesores*/
+
+
+.profesores-rating p{
+	font-size: 30px;
+
+
+}
+
+.jedi-rating h1{
+	font-size: 40px;
+    color: #FFB800;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.display{
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.titles {
+  font-size: 30px;
+}
+
+.align{
+  text-align: left;
+}
+
+.ml{
+  margin-left: 100px;
+}
+
+.numbers {
+  font-size: 30px;
+}
+
+.box {
+  background-color: rgb(231, 226, 226);
+  margin-left: 5px;
+}
+
+#contenedor-de-felicidad-yey{
+  margin-left: 80px;
+}
+
+#profesores, #jedi{
+  margin-left: 5px;
+}
+
+#jedi, #contenedor-de-felicidad-yey, #profesores {
+  width: 400px;
+  margin-top: 50px;
+}
+
+#jedi{
+  vertical-align: top;
+}

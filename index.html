@@ -1,14 +1,311 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Dashboard</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>trabajo</title>
+	<link rel="stylesheet" href="menu/menu.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
 
+<body>
+	<div id="overview"> <!-- overview -->
+<header>
+     <div id="imagen-1">
+	 	<img class="laboratoria" src="Imagenes/download.png" alt="">
+     </div>
+
+
+                         <!-- Menu Principal -->
+    <div class="menu">
+    	<ul>
+    		<li>
+    			<span class="fa fa-bars" aria-hidden="true"></span>
+    		</li>
+    		<li>
+    		<input type="#" name="">
+    			<span class="fa fa-search" aria-hidden="true"></span>
+    		</li>
+    		<li>
+				<span class="fa fa-envelope-o" aria-hidden="true"></span>
+			</li>
+			<li>
+    			<p>Teacher Suga</p>
+    		</li>
+		<!-- Poner iconos dentro de span &#60 -->
+			<li>
+    			<span class="fa fa-chevron-down" aria-hidden="true"></span>
+    		</li>
+			<li>
+    			<span class="fa fa-cog" aria-hidden="true"></span>
+    		</li>
+    		<li>
+    			<p>ES/EN</p>
+    		</li>
+    		<li class = "suga-img-li">
+    			<img class = "suga-img" src="Imagenes/awesome2.gif" alt="">
+    		</li>
+		</ul>
+</header>
+                    <!-- Menu desplegable -->
+<ul class="nav nav-tabs">
+                <li class="active"><a href="#">Laboratoria</a></li>
+                <li class="dropdown" id="SCL">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Santiago
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li id="SCL20162"><a href="#">2016-II</a></li>
+                        <li id="SCL20171">
+                            <a href="#">2017-I</a>
+                        </li>
+                        <li id="SCL20172">
+                            <a href="#">2017-II</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown" id="AQP">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Arequipa
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li id="AQP20162"><a href="#">2016-II</a></li>
+                        <li><a href="#">2017-I</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" id="CDMX">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ciudad de México
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li id="CDMX20171"><a href="#">2017-I</a></li>
+                        <li id="CDMX20172"><a href="#">2017-II</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" id="LIM">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Lima
+    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li id="LIM20162"><a href="#">2016-II</a></li>
+                        <li id="LIM20171">
+                            <a href="#">2017-I</a>
+                        </li>
+                        <li id="LIM20172">
+                            <a href="#">2017-II</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+<div id="logotipo">
+	<img src="Imagenes/logoLab.png" alt="">
+</div>
+</div>
+
+	 <!-- student enrrolled/dropout -->
+<section class="display">
+
+<div class="contenedor-1">
+	<div class="students">
+		<p class="titles align">Inscripciones</p>
+		<div id="porcentaje">
+			<div class="display box">
+				<div id="totalStudents" class="numbers align"></div>
+				<div >Student currently enrolled</div>
+			</div>
+			<div class="display box" class="m-l">
+				<div class="display numbers align" id="percentageDesert"></div>
+				<div class="display">%</div>
+				<div >%dropout</div>
+			</div>
+		</div>
+	</div>
+    <div class="students-graphic">
+    	<img src="Imagenes/barras.png" alt="">
+    </div>
+</div>
+
+              <!-- CONTENEDOR 2 Logros -->
+
+<div class="contenedor-2">
+        <p class="titles align">Logros</p>
+          <div class="display box">
+						<div class="numbers align" id="countAchiv"></div>
+						<div >Estudiantes que se encuentran
+						en el obejtivo</div>
+          </div>
+            <div class="display box">
+							<div class="display numbers align" id="percentageTeHs"></div>
+							<div class="display">%</div>
+							<img class="display" src="Imagenes/triangulo.png" alt="">
+							<div class="block">% Del total</div>
+
+            </div>
+
+    <div class="text-logros">
+						<img class="block" src="Imagenes/grafico-circular-1.png" alt="">
+
+    </div>
+</div>
+
+
+
+        <!-- Contenedor 3 Score -->
+
+<div id="contenedor-3">
+	<p class="titles align">Net Promoter Score</p>
+	<div class="promoter-score display box">
+			<div class="promoter-score">
+		<h1 id="nps" class="display"></h1>
+		<div class="display">%</div>
+			<img src="Imagenes/triangulo - copia - copia.png" alt="">
+	</div>
+	<h5 class="promoter-score">%cumilative nps</h5>
+	</div>
+	<div  class="promoter-score-list display box">
+		<div class="block">
+			<h4 id="promoters" class="display"></h4>
+			<div class="display">% Promoters</div>
+		</div>
+		<div class="block">
+			<h4 id="passive" class="display"></h4>
+			<div class="display">% Passive</div>
+		</div>
+		<div class="block">
+			<h4 id="detractors" class="display"></h4>
+			<div class="display">% Distractors</div>
+		</div>
+	</div>
+	<img class="block" src="Imagenes/grafico-circular-2.png" alt="">
+</div>
+
+          <!-- Tech Skills -->
+     <!-- Aqui va el Menu Desplegable -->
+
+<div id="tech-skills">
+	<p class="titles align">Habilidades Técnicas</p>
+
+    <div class="students-meet display box">
+    	<p  id="countTech" class="numbers align"></p>
+    	<p>estudiantes que
+        cumplen con el objetivo</p>
+    </div>
+    <div class="total display box">
+    	<p id="proTech" class="display numbers align"></p>
+			<div class="display">%</div>
+    	<p>% del total</p></div>
+
+			<div class="block">
+    <img  src="Imagenes/barras 2.png" alt="">
+    <img  src="Imagenes/grafico-circular-3.png" alt="">
+		</div>
+</div>
+
+
+        <!-- Life Skills -->
+   <!-- Aqui va el Menu Desplegable -->
+	 <div id="life-skills">
+		 <p class="titles align">Habilidades Socio-Emocionales</p>
+	 	<div class="block">
+	     <div class="students-meet display box">
+	     	<p  id="countHse" class="numbers align"></p>
+	     	<p>estudiantes que
+	         cumplen con el objetivo</p>
+	     </div>
+	     <div class="total display box">
+	     	<p id="proHse" class="numbers display align"></p>
+				<div class="display">%</div>
+	     	<p>% del total</p></div>
+	 				</div>
+	 			<div class="block">
+					<img src="Imagenes/barras 3.png" alt="">
+					<img src="Imagenes/grafico-circular-4.png" alt="">
+	 		</div>
+	 </div>
+
+
+
+       <!-- Contenedor 4 Satisfacción-->
+
+
+<div class="display" id="contenedor-de-felicidad-yey">
+		<p class="yey titles align">Satisfacción de estudiante</p>
+		<div class="box">
+			<h1 class="yey numbers align" id="totalSatis"></h1>
+			<h5 class="yey">% cumpliendo o excediendo la expectativa</h5>
+		</div>
+		<img class="yey" src="Imagenes/feli.png" alt="">
+
+</div>
+
+
+         <!-- Contenedor 5 Profesores -->
+
+<div class="display" id="profesores">
+		<p class="profesores-rating titles align">Evaluaciones Profesores</p>
+		<div class="box">
+			<h1 class="profesores-rating numbers align" id="averageProf"></h1>
+			<h5 class="profesores-rating">calificación general del profesor</h5>
+		</div>
+		<img class="profesores-rating" src="Imagenes/profesor.png" alt="">
+</div>
+
+          <!-- Contenedor 6 Jedis-->
+
+<div class="display" id="jedi">
+		<p class="jedi-rating titles align">Evaluaciones Jedi</p>
+		<div class="box">
+			<h1 class="jedi-rating display numbers align" id="averageJedi"></h1>
+	  	<img class="triangulo display" src="Imagenes/triangulo.png" alt="">
+			<h5 class="jedi-rating">calificación general jedi</h5>
+		</div>
+		<img class="jedi-rating" src="Imagenes/jedi.png" alt="">
+</div>
+
+</section>
+
+
+
+            <!-- Alumna -->
+<section class="display-none">
+<div class="estudiante">
+	<img src="Imagenes/jhope.jpg" alt="">
+</div>
+<div class="Nombre">
+	<p>Nombre de estudiante</p>
+</div>
+<div class="carrera">
+	frontend Developer
+</div>
+<div class="carrera-2">
+	<p>Javascript</p>
+	<p>Apts</p>
+	<p>Jquery</p>
+</div>
+
+<div class="porsentajes">
+	<p>95.6%</p>
+	<p>95.6%</p>
+</div>
+
+<div class="porsentajes-skills">
+	<p>Tech Skills</p>
+	<p>Life Skills</p>
+</div>
+
+<div class="iterm">
+	<p>Iterm</p>
+</div>
+<div class="iterm-text">
+	<p>English Skills</p>
+</div>
+
+</section>
+
+	<script src="https://use.fontawesome.com/47ef5793b9.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
     <script src="./js/app.js"></script>
-  </body>
+
+</body>
 </html>
