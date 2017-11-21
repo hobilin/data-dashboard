@@ -4,6 +4,9 @@
 
 }
 
+body{
+  background-color: #f2eded;
+}
     /*Menu 1*/
 
 #imagen-1{
@@ -81,39 +84,48 @@
 
 .contenedor-2{
 	display: inline-block; /*lo agrego la Pau*/
-  border: 1px solid black;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
   height: auto;
   width: 400px;
   vertical-align: top;
   margin-top: 50px;
   margin-left: 10px;
+  height: 480px;
 
 }
 
 .contenedor-1{
 	display: inline-block;  /*lo agrego la Pau*/
-  border: 1px solid black;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
   vertical-align: top;
   margin-left: 80px;
   margin-top: 50px;
+  height: 458px;
 }
 
 #contenedor-3{
   display: inline-block;  /*lo agrego la Pau*/
-  border: 1px solid black;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
   width: 400px;
   margin-top: 50px;
   margin-left: 10px;
+  height: 480px;
 }
 
 #tech-skills, #life-skills, #profesores, #jedi, #contenedor-de-felicidad-yey{
-  border: 1px solid black;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
 }
 
+ #profesores, #jedi, #contenedor-de-felicidad-yey{
+   height: 350px;
+ }
+
 #tech-skills, #life-skills{
-  margin-left: 80px;
-  width: 1200px;
+  margin-left: 100px;
+  width: 500px;
+  height: 700px;
   margin-top: 50px;
+  vertical-align: top;
 }
 
 .promoter-score{
@@ -121,12 +133,27 @@
 }
 
 
-.promoter-score-list{
-  margin-top: 20px;
+#graph-ach{
+  margin-top: 15px;
 }
 
+.button{
+  border: 1px solid #FFB800;
+  background-color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
 
-              /*Profesores*/
+.button:focus{
+  outline: none;
+  border: none;
+  border-bottom: 6px solid #FFB800;
+}
+#general{
+  margin-left: 450px;
+}
+            /*Profesores*/
 
 
 .profesores-rating p{
@@ -140,36 +167,6 @@
     color: #FFB800;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .display{
@@ -186,6 +183,7 @@
 
 .titles {
   font-size: 30px;
+  margin: 10px;
 }
 
 .align{
@@ -197,12 +195,14 @@
 }
 
 .numbers {
-  font-size: 30px;
+  font-size: 30px!important;
 }
 
 .box {
   background-color: rgb(231, 226, 226);
-  margin-left: 5px;
+  margin-left: 10px;
+  vertical-align: top;
+  padding: 10px;
 }
 
 #contenedor-de-felicidad-yey{
@@ -220,4 +220,98 @@
 
 #jedi{
   vertical-align: top;
+}
+
+#translator{
+  background-color: #FFB800;
+  color: #fff;
+  border: none;
+  padding: 5px;
+}
+
+/*Menu  de Habilidades Tecnicas
+          Copiar y Pegar */
+
+
+.habilidades-menu ul{
+list-style: none;
+margin-top: 10px;
+margin-left: 10px;
+}
+
+.habilidades-menu ul li{
+padding: 15px;
+position: relative;
+width: 200px;
+background-color: #333;
+border-right: 5px solid #ECC905;
+border-top: 1px solid #E7E7E7;
+}
+
+.habilidades-menu > ul > li{
+border-right: 5px solid #fff;
+}
+
+.habilidades-menu ul ul{
+transition: all 0.3s;
+opacity: 0;
+position:absolute;
+visibility: hidden;
+left: 80%
+top:5%;
+}
+
+.habilidades-menu ul li:hover > ul{
+opacity: 1;
+visibility: visible;
+
+}
+
+.habilidades-menu ul li a{
+color:#ffffff;
+text-decoration-color: none;
+}
+
+
+/*Menu 2 de Habilidades Socioemocionales
+          Copiar y Pegar */
+
+
+.habilidades-menu-2 ul{
+list-style: none;
+margin-top: 10px;
+margin-left: 10px;
+}
+
+.habilidades-menu-2 ul li{
+padding: 15px;
+position: relative;
+width: 200px;
+background-color: #333;
+border-right: 5px solid #ECC905;
+border-top: 1px solid #E7E7E7;
+}
+
+.habilidades-menu-2 > ul > li{
+border-right: 5px solid #fff;
+}
+
+.habilidades-menu-2 ul ul{
+transition: all 0.3s;
+opacity: 0;
+position:absolute;
+visibility: hidden;
+left: 80%
+top:5%;
+}
+
+.habilidades-menu-2 ul li:hover > ul{
+opacity: 1;
+visibility: visible;
+
+}
+
+.habilidades-menu-2 ul li a{
+color:#ffffff;
+text-decoration-color: none;
 }

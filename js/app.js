@@ -6,7 +6,7 @@ var btnAqp = document.getElementById("AQP20162");
 var AQP1 = function(){
 
   //obteniendo cantidad de alumnas
-var students = data.AQP['2016-2']. students;
+var students = data.AQP['2016-2'].students;
 var counter= 1;
 var total;
 for(var i = 0; i < students.length; i++){

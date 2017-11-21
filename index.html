@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>trabajo</title>
 	<link rel="stylesheet" href="menu/menu.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -40,7 +42,7 @@
     			<span class="fa fa-cog" aria-hidden="true"></span>
     		</li>
     		<li>
-    			<p>ES/EN</p>
+    			<button id="translator" type="button" name="button">ES/EN</button>
     		</li>
     		<li class = "suga-img-li">
     			<img class = "suga-img" src="Imagenes/awesome2.gif" alt="">
@@ -100,6 +102,10 @@
 </div>
 </div>
 
+<button class="display button" id="general">GENERAL</button>
+<button class="display button" id="students">ESTUDIANTES</button>
+<button class="display button" id="teachers">PROFESORES</button>
+
 	 <!-- student enrrolled/dropout -->
 <section class="display">
 
@@ -109,12 +115,12 @@
 		<div id="porcentaje">
 			<div class="display box">
 				<div id="totalStudents" class="numbers align"></div>
-				<div >Student currently enrolled</div>
+				<div >Estudiantes Activas</div>
 			</div>
 			<div class="display box" class="m-l">
 				<div class="display numbers align" id="percentageDesert"></div>
 				<div class="display">%</div>
-				<div >%dropout</div>
+				<div >%dadas de baja</div>
 			</div>
 		</div>
 	</div>
@@ -129,8 +135,7 @@
         <p class="titles align">Logros</p>
           <div class="display box">
 						<div class="numbers align" id="countAchiv"></div>
-						<div >Estudiantes que se encuentran
-						en el obejtivo</div>
+						<div >Estudiantes que sobrepasan la meta</div>
           </div>
             <div class="display box">
 							<div class="display numbers align" id="percentageTeHs"></div>
@@ -141,7 +146,7 @@
             </div>
 
     <div class="text-logros">
-						<img class="block" src="Imagenes/grafico-circular-1.png" alt="">
+						<img class="block" id="graph-ach" src="Imagenes/grafico-circular-1.png" alt="">
 
     </div>
 </div>
@@ -180,45 +185,73 @@
           <!-- Tech Skills -->
      <!-- Aqui va el Menu Desplegable -->
 
-<div id="tech-skills">
-	<p class="titles align">Habilidades Técnicas</p>
+<div id="tech-skills" class="display">
+	<p class="titles align display">Habilidades Técnicas</p>
 
-    <div class="students-meet display box">
-    	<p  id="countTech" class="numbers align"></p>
-    	<p>estudiantes que
-        cumplen con el objetivo</p>
-    </div>
-    <div class="total display box">
-    	<p id="proTech" class="display numbers align"></p>
+	<div class="display habilidades-menu">
+	    <ul>
+	        <li><a href="">Habilidades tecnicas</a>
+	            <ul>
+	                <li><a href="">sprint 1 : Creando un sitio interactivo</a></li>
+	                <li><a href="">sprint 2 : Creando un sitio interactivo</a></li>
+	                <li><a href="">sprint 3 : Creando un sitio interactivo</a></li>
+	                <li><a href="">sprint 4 : Creando un sitio interactivo</a></li>
+	            </ul>
+	         </li>
+
+	    </ul>
+	</div>
+  <div class="block">
+		<div class="students-meet display box">
+			<p  id="countTech" class="numbers align"></p>
+			<p>estudiantes que
+				cumplen con el objetivo</p>
+		</div>
+		<div class="total display box">
+			<p id="proTech" class="display numbers align"></p>
 			<div class="display">%</div>
-    	<p>% del total</p></div>
+			<p>% del total</p></div>
 
 			<div class="block">
-    <img  src="Imagenes/barras 2.png" alt="">
-    <img  src="Imagenes/grafico-circular-3.png" alt="">
+		<img  src="Imagenes/barras 2.png" alt="">
 		</div>
+  </div>
 </div>
 
 
         <!-- Life Skills -->
    <!-- Aqui va el Menu Desplegable -->
-	 <div id="life-skills">
-		 <p class="titles align">Habilidades Socio-Emocionales</p>
-	 	<div class="block">
-	     <div class="students-meet display box">
-	     	<p  id="countHse" class="numbers align"></p>
-	     	<p>estudiantes que
-	         cumplen con el objetivo</p>
-	     </div>
-	     <div class="total display box">
-	     	<p id="proHse" class="numbers display align"></p>
-				<div class="display">%</div>
-	     	<p>% del total</p></div>
-	 				</div>
-	 			<div class="block">
-					<img src="Imagenes/barras 3.png" alt="">
-					<img src="Imagenes/grafico-circular-4.png" alt="">
-	 		</div>
+	 <div id="life-skills" class="display">
+		 <p class="titles align display">Habilidades Socio-Emocionales</p>
+		 <div class="display habilidades-menu-2">
+		     <ul>
+		         <li><a href="">Habilidades socioemocionales</a>
+		             <ul>
+		                 <li><a href="">sprint 1 : Creando un sitio interactivo</a></li>
+		                 <li><a href="">sprint 2 : Creando un sitio interactivo</a></li>
+		                 <li><a href="">sprint 3 : Creando un sitio interactivo</a></li>
+		                 <li><a href="">sprint 4 : Creando un sitio interactivo</a></li>
+		             </ul>
+		          </li>
+
+		     </ul>
+		 </div>
+		 <div class="block">
+			 <div class="block">
+ 		     <div class="students-meet display box">
+ 		     	<p  id="countHse" class="numbers align"></p>
+ 		     	<p>estudiantes que
+ 		         cumplen con el objetivo</p>
+ 		     </div>
+ 		     <div class="total display box">
+ 		     	<p id="proHse" class="numbers display align"></p>
+ 					<div class="display">%</div>
+ 		     	<p>% del total</p></div>
+ 		 				</div>
+ 		 			<div class="block">
+ 						<img src="Imagenes/barras 3.png" alt="">
+ 		 		</div>
+		 </div>
 	 </div>
 
 
